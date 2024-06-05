@@ -1,0 +1,80 @@
+.horoscope-card {
+    border: 1px solid black;
+    padding: 20px;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url('/src/assets/bg.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 50px;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  .content {
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .deity-image {
+    width: 40%;
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Optional: add background color for readability */
+    padding: 10px; /* Optional: add padding for better spacing */
+  }
+  
+  .details p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .footer {
+    font-size: 14px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Optional: add background color for readability */
+    padding: 10px; /* Optional: add padding for better spacing */
+  }
+  
+  .print-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  @media print {
+    @page {
+      size: landscape;
+      margin: 10mm;
+    }
+  
+    .horoscope-card {
+      page-break-inside: avoid;
+      width: auto;
+      margin: 0;
+      border: none;
+      background: none; /* Remove background image during printing */
+    }
+  
+    .print-button {
+      display: none;
+    }
+  }
+  

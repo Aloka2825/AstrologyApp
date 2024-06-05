@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Algerian';
+    src: url('/src/assets/Algerian\ Regular.ttf') format('truetype');
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.font-algerian {
+    font-family: 'Algerian', sans-serif;
+
+  }
+
+@media print {
+    @page {
+      size: landscape;
+      width: fit-content;
+      height: auto;
+    }
+  
+    .horoscope-card {
+      page-break-inside: avoid;
+      width: auto;
+      margin: 0;
+      border: none;
+      
+    }
+
+  }
+  
