@@ -32,8 +32,8 @@ function View() {
         <img src={lord} alt="Deities" className="w-32 md:w-40 lg:w-48 mb-6 rounded-full border-4 border-white shadow-md" />
         <div className="details">
           <p className="text-lg md:text-xl uppercase">NAME: <strong>{name}</strong></p>
-          <p className="text-lg md:text-xl uppercase">FATHER: <strong>{fathersName}</strong> </p>
-          <p className="text-lg md:text-xl uppercase">MOTHER:<strong>{mothersName}</strong></p>
+          <p className="text-lg md:text-xl uppercase">FATHER'S NAME: <strong>{fathersName}</strong> </p>
+          <p className="text-lg md:text-xl uppercase">MOTHER'S NAME:<strong>{mothersName}</strong></p>
           <p className="text-lg md:text-xl uppercase">ADDRESS:<strong>{address}</strong></p>
         </div>
         <div className="footer">
